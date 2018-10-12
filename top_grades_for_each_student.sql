@@ -15,4 +15,4 @@ JOIN students s
 ON g.grade_student_id = s.student_id
 JOIN courses c
 ON g.grade_course_id = c.course_id
-ORDER BY s.student_name, g.grade;
+ORDER BY s.student_id, g.grade;
