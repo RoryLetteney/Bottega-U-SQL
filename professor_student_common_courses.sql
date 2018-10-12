@@ -8,4 +8,4 @@ JOIN students_courses sc
 ON c.course_id = sc.sc_course_id
 JOIN (SELECT student_id, student_name FROM students) s
 ON sc.sc_student_id = s.student_id
-GROUP BY PROFESSOR, STUDENT;
+GROUP BY PROFESSOR, STUDENT ORDER BY "CLASSES IN COMMON";
